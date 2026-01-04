@@ -176,7 +176,7 @@ const getLinearPathOptions = (
 
 export const generateLinearPath = (frames: number[][], options?: object): string => {
   const { samples, height, width, top, left, type, svgPaths } =
-    generateLinearPathOptions(options);
+    getLinearPathOptions(options);
 
   let path = ``;
   
@@ -206,3 +206,25 @@ const getPolarPathOptions = (
   return Object.assign({}, _defaults, options || {});
 };
 
+export const generatePolarPath = (
+  frames: number[][],
+  options?: Partial<PolarPathOptions>
+) => {
+  const {
+    samples,
+    distance,
+    length,
+    top,
+    left,
+    type,
+    startDegrees,
+    endDegrees,
+    invertDegrees,
+    invertPath = false,
+    svgPaths = [{ d: "Q", sdeg: 0, sr: 0, deg: 50, r: 100, edeg: 100, er: 0 }],
+  } = getPolarPathOptions(options);
+
+  let path = ``;
+  
+  return path;
+};

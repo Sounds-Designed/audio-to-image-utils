@@ -173,3 +173,13 @@ const getLinearPathOptions = (
 
   return Object.assign({}, _defaults, options || {});
 };
+
+export const generateLinearPath = (frames: number[][], options?: object): string => {
+  const { samples, height, width, top, left, type, svgPaths } =
+    generateLinearPathOptions(options);
+
+  let path = ``;
+  
+  return path;
+};
+

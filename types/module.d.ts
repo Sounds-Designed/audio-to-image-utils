@@ -1,3 +1,5 @@
+type LinearWaveformPathType = "bars" | "mirror" | "steps";
+
 type BasePathGeneratorOptions = {
   channel: number;
   samples: number;
@@ -7,7 +9,7 @@ type BasePathGeneratorOptions = {
   frames: number;
   normalize: boolean;
   svgPaths: LinearSVGPathData[];
-  type: "bars" | "mirror" | "steps";
+  type: LinearWaveformPathType;
 };
 
 type GetAnimationFramesFromAudioBufferOptions = {

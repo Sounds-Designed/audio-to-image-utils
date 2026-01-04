@@ -183,3 +183,26 @@ export const generateLinearPath = (frames: number[][], options?: object): string
   return path;
 };
 
+const getPolarPathOptions = (
+  options?: Partial<PolarPathOptions>
+): PolarPathOptions => {
+  const _defaults: PolarPathOptions = {
+    samples: 0,
+    distance: 50,
+    length: 100,
+    top: 0,
+    left: 0,
+    type: "steps",
+    startDegrees: 0,
+    endDegrees: 360,
+    invertDegrees: false,
+    invertPath: false,
+    svgPaths: [{ d: "Q", sx: 0, sy: 0, x: 50, y: 100, ex: 100, ey: 0 }],
+    animation: false,
+    frames: 10,
+    normalize: true,
+  };
+
+  return Object.assign({}, _defaults, options || {});
+};
+

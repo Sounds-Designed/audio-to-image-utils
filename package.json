@@ -11,7 +11,10 @@
   },
   "exports": {
     ".": {
-      "types": ["./types/module.d.ts", "./dist/index.d.mts"],
+      "types": [
+        "./types/module.d.ts",
+        "./dist/index.d.mts"
+      ],
       "import": "./dist/index.mjs"
     }
   },

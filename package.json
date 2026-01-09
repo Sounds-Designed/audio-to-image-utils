@@ -18,7 +18,10 @@
   "keywords": [],
   "author": "Alex Scott <codetheorist@outlook.com>",
   "type": "commonjs",
-  "repository": "Sounds-Designed/audio-to-image-utils",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sounds-Designed/audio-to-image-utils.git"
+  },
   "license": "GPL-3.0-or-later",
   "files": [
     "dist",

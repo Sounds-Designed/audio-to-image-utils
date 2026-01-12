@@ -11,7 +11,7 @@
 Install the module to your project with one command:
 
 ```bash
-npm install -s @sounds-designed/audio-to-image-utils
+npm install -S @sounds-designed/audio-to-image-utils
 ```
 
 That's it! You can now use our audio to image conversion utilities in your Javascript project ✨
